@@ -50,7 +50,7 @@ namespace WinDurango.UI.Controls
 
             if ((bool)unregisterCheckbox.IsChecked)
             {
-                var controller = new ProgressDialog($"Uninstalling {_Name}...", $"Uninstalling {_Name}", isIndeterminate: true).GetController();
+                var controller = new ProgressDialog($"Uninstalling {_Name}...", $"Uninstaaaling {_Name}", isIndeterminate: true).GetController();
                 await controller.CreateAsync(async () =>
                 {
                     await Packages.RemovePackage(_package, controller);
